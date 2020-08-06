@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    ## drop n create table again, good for testing, comment this in production
+    ## o poner en validate para produccion (create, create-drop, update)
+    hibernate.ddl-auto: create-drop
+  datasource:
+    ## PostgreSQL
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/example1
+    username: postgres
+    password: ut2020.
+    driverClassName: org.postgresql.Driver
